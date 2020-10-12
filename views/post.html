@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/plugins/bootstrap.css">
+  <title>new a student information</title>
+</head>
+<body>
+  <div class="container">
+      <form action="/add" method="POST">
+        <div class="form-group">
+          <input type="hidden" class="form-control" id="id" placeholder="Name" name="id">
+        </div>
+        <div class="form-group">
+          <label for="username">name</label>
+          <input type="text" class="form-control" id="username" placeholder="Name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="ages">age</label>
+          <input type="number" id="ages" name="age">
+        </div>
+        <div>
+            <label for="hobbies">兴趣</label>
+            <textarea name="hobbies" id="hobbies" class="form-control" value=""></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+  </div>
+  
+</body>
+</html>
